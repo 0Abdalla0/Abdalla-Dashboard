@@ -5,8 +5,9 @@
     --orange-color: #f59e0b;
     --green-color: #22c55e;
     --red-color: #f44336;
-    --grey-color: #888;
-    --page-bg-color:#f1f5f9;
+    --grey-color: rgb(136, 136, 136);
+    --page-bg-color:rgb(241, 245, 249);
+    --box-alt-color:rgba(136, 136, 136,0.3);
 }
 * {
     box-sizing: border-box;
@@ -43,7 +44,7 @@ ul {
 }
 /* !End Global Rules */
 /* Start side-board */
-.side-board .list li:hover{
+.side-board .list li:hover,.active{
     cursor: pointer;
     background-color:var(--page-bg-color);
 }
@@ -63,10 +64,27 @@ ul {
     height: 15px;
     border: 5px solid white;
 }
+@media(max-width:767px){
+    .side-board .title::before{
+        display: none;
+    }
+    .side-board .title{
+        margin-left: -10px;
+        font-size: 10px;
+        border-bottom: none;
+    }
+    .side-board .list{
+        margin-top: 20px;
+    }
+    .side-board .list span{
+        display: none;
+    }
+}
 /* End side board */
 /* start header */
 header .search{
     border: 2px solid var(--page-bg-color);
+    min-width: 160px;
 }
 header .search::before{
     font-family: var(--fa-style-family-classic);
@@ -82,4 +100,49 @@ header .search::before{
 header .search input:focus{
     min-width: 300px;
 }
+header .icon i::after{
+    content: "";
+    position: absolute;
+    top: -17px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+@media(max-width:767px){
+    header .search{
+        max-width: 100px;
+    }
+    header .search input:focus{
+        min-width: 150px;
+        max-width: 151px;
+    }
+}
 /* End header */
+/* start content */
+.main-content .box .welcome{
+    background-color:var(--box-alt-color);
+}
+.main-content .box .info .image{
+    width: 50px;
+    position: absolute;
+    top: -55px;
+    left: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.main-content .box .info .text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-width: 1px 0px 1px 0px;
+    border-color: var(--box-alt-color);
+    border-style: solid;
+    font-size: smaller;
+    text-align: center;
+}
+.main-content .box .info .btn{
+    position: absolute;
+    right: 10px;
+}
+/* End content */

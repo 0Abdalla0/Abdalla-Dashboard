@@ -8,6 +8,9 @@
 .flex-85{
     flex: 0.85;
 }
+.flex-col{
+    flex-direction: column;
+}
 .center-between{
     align-items: center;
     justify-content: space-between;
@@ -16,6 +19,9 @@
 /* Start color */
 .c-black{
     color: black;
+}
+.c-grey{
+    color: #888;
 }
 /* End color */
 /* Start paddings */
@@ -74,6 +80,9 @@
 .font-14{
     font-size: 14px;
 }
+.font-24{
+    font-size: 24px;
+}
 /* End text */
 /* Star width */
 .w-100{
@@ -106,3 +115,69 @@
     overflow: hidden;
 }
 /* End overflow */
+/* start cursor */
+.pointer{
+    cursor: pointer;
+}
+/* End cursor */
+/* start main-title */
+.main-title{
+    padding: 10px;
+    font-size: 24px;
+    top: -20px;
+}
+.main-title .line {
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    background-color: white;
+    top: 100px;
+}
+.main-title .line .fill{
+    background-color: black;
+    height: 100%;
+}
+/* End main-title */
+/* start content */
+.main-content{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    gap: 40px;
+}/* Small */
+@media (min-width: 768px) {
+.main-content {
+    width: 750px;
+}
+}
+/* Medium */
+@media (min-width: 992px) {
+.main-content {
+    width: 970px;
+}
+}
+/* Large */
+@media (min-width: 1200px) {
+.main-content {
+    width: 100%;
+}
+}
+.box{
+    background-color: white;
+    border-radius: 15px;
+    min-height: 400px;
+}
+
+/* End content */
+/* Start btn */
+.btn{
+    padding: 10px;
+    background-color: #0075ff;
+    color: white;
+    border-radius: 10px;
+}
+/* End btn */
+/* span */
+span{
+    color: #888;
+}
