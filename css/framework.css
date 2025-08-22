@@ -1,0 +1,108 @@
+/* start flex */
+.d-flex{
+    display: flex;
+}
+.flex-15{
+    flex: 0.15;
+}
+.flex-85{
+    flex: 0.85;
+}
+.center-between{
+    align-items: center;
+    justify-content: space-between;
+}
+/* End flex */
+/* Start color */
+.c-black{
+    color: black;
+}
+/* End color */
+/* Start paddings */
+.p-20{
+    padding: 20px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-5{
+    padding: 5px;
+}
+/* End paddings */
+/* start margins */
+.m-20{
+    margin: 20px;
+}
+.m-top-60{
+    margin-top: 60px;
+}
+.m-left-30{
+    margin-left: 30px;
+}
+.m-right-10{
+    margin-right: 10px;
+}
+/* End margins */
+/* start postions */
+.p-rel{
+    position: relative;
+}
+.p-abs{
+    position: absolute;
+}
+/* End postions */
+.bg-white{
+    background-color: white;
+}
+/* Start borders */
+.r-10{
+    border-radius: 10px;
+}
+.border-none{
+    border: none;
+}
+/* End borders */
+/* Strat text-align */
+.t-center{
+    text-align: center;
+}
+.t-start{
+    text-align: start;
+}
+/* End text-align */
+/* Start text */
+.font-14{
+    font-size: 14px;
+}
+/* End text */
+/* Star width */
+.w-100{
+    width: 100%;
+}
+.w-80{
+    width: 80%;
+}
+.max-100{
+    max-width: 100%;
+}
+/* End width */
+/* Start height */
+.h-50{
+    height: 50px;
+}
+/* End height */
+/* Start transitions */
+.transition{
+    transition: all 0.3s ease-in-out;
+}
+/* End transitions */
+/* start shadows */
+.shadow-2{
+    box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+}
+/* End shadows */
+/* start overflow */
+.overflow-hide{
+    overflow: hidden;
+}
+/* End overflow */
