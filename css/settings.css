@@ -6,7 +6,6 @@
     --red-color: #f44336;
     --grey-color: #888;
 }
-/* Start control */
 .control .web-control .btn,.security .row .btn{
     border-radius: 50px;
     width: 80px;
