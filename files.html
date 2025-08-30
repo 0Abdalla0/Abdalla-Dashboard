@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import styles -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- page css-->
+    <link rel="stylesheet" href="css/files.css">
+    <!-- page css-->
+    <link rel="stylesheet" href="css/framework.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- End Styles -->
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="page d-flex">
+        <!-- Start Side-bar -->
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Abdalla</h3>
+            <ul>
+                <li>
+                <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                    <i class="fa-regular fa-chart-bar fa-fw"></i>
+                    <span>Dashboard</span>
+                </a>
+                </li>
+                <li>
+                <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span>Settings</span>
+                </a>
+                </li>
+                <li>
+                <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                    <i class="fa-regular fa-user fa-fw"></i>
+                    <span>Profile</span>
+                </a>
+                </li>
+                <li>
+                <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <span>Projects</span>
+                </a>
+                </li>
+                <li>
+                <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+                    <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                    <span>Courses</span>
+                </a>
+                </li>
+                <li>
+                <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                    <i class="fa-regular fa-circle-user fa-fw"></i>
+                    <span>Friends</span>
+                </a>
+                </li>
+                <li>
+                <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+                    <i class="fa-regular fa-file fa-fw"></i>
+                    <span>Files</span>
+                </a>
+                </li>
+                <li>
+                <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+                    <i class="fa-regular fa-credit-card fa-fw"></i>
+                    <span>Plans</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+            <!-- End side-bar -->
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                <input class="p-10" type="search" placeholder="Type A Keyword" />
+                </div>
+                <div class="icons d-flex align-center">
+                <span class="notification p-relative">
+                    <i class="fa-regular fa-bell fa-lg"></i>
+                </span>
+                <img decoding="async" src="img/avatar.png" alt="" />
+                </div>
+            </div>
+            <!-- End head -->
+            <!-- Start Profile-->
+            <h1 class="p-relative">Files</h1>
+            <div class="files-page d-flex space-between">
+                <!-- Start stats -->
+                <div class="stat bg-white ml-15 rad-10 p-20 mr-15 p-relative">
+                    <h2 class="mt-0 mb-20">Files Statistics</h2>
+                    <div class="row border-eee p-5 d-felx between-flex fs-13 mb-20">
+                        <div class="icon-blue mr-15 ml-15 p-20">
+                            <i class="fa-regular fs-15 fa-file-pdf fa-lg blue center-flex c-blue"></i>
+                        </div>
+                        <div class="txt grow-1 d-flex between-flex">
+                            <div class="left">
+                                <p>PDF Files</p>
+                                <p class="c-grey fs-13">130 Files</p>
+                            </div>
+                            <p class="c-grey">6.5GB</p>
+                        </div>
+                    </div>
+                    <div class="row border-eee p-5 d-felx between-flex fs-13 mb-20">
+                        <div class="icon-green mr-15 ml-15 p-20">
+                            <i class="fa-regular fa-images fa-lg green center-flex c-green icon"></i>
+                        </div>
+                        <div class="txt grow-1 d-flex between-flex">
+                            <div class="left">
+                                <p>images Files</p>
+                                <p class="c-grey fs-13">115 Files</p>
+                            </div>
+                            <p class="c-grey">3.5GB</p>
+                        </div>
+                    </div>
+                    <div class="row border-eee p-5 d-felx between-flex fs-13 mb-20">
+                        <div class="icon-red mr-15 ml-15 p-20">
+                            <i class="fa-regular fa-file-word fa-lg red center-flex c-red icon"></i>
+                        </div>
+                        <div class="txt grow-1 d-flex between-flex">
+                            <div class="left">
+                                <p>word Files</p>
+                                <p class="c-grey fs-13">110 Files</p>
+                            </div>
+                            <p class="c-grey">3.2GB</p>
+                        </div>
+                    </div>
+                    <div class="row border-eee p-5 d-felx between-flex fs-13 mb-20">
+                        <div class="icon-orange mr-15 ml-15 p-20">
+                            <i class="fa-solid fa-file-csv fa-lg orange center-flex c-orange icon"></i>
+                        </div>
+                        <div class="txt grow-1 d-flex between-flex">
+                            <div class="left">
+                                <p>CSV Files</p>
+                                <p class="c-grey fs-13">99 Files</p>
+                            </div>
+                            <p class="c-grey">2.9GB</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-shape bg-blue c-white  p-10"><i class="fa-solid fa-angles-up mr-10"></i> Upload</a>
+                </div>
+                <!-- End stats -->
+                <!-- Start Files -->
+                <div class="files-wrapper d-grid gap-20 grow-1 ml-15">
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/pdf.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.pdf</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/avi.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.avi</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/eps.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.eps</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/psd.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.psd</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/dll.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.dll</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/png.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.png</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/pdf.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.pdf</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/avi.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.avi</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/eps.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.eps</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/psd.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.psd</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/dll.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.dll</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/png.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.png</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/pdf.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.pdf</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/avi.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.avi</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/eps.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.eps</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/psd.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.psd</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/dll.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.dll</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/png.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.png</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/pdf.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.pdf</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/avi.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.avi</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/eps.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.eps</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/psd.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.psd</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/dll.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.dll</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                    <div class="box bg-white p-10 p-relative rad-10">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <div class="image">
+                            <img src="img/png.svg" alt="" style="width: 50px;">
+                        </div>
+                        <p class="txt-c">my-file.png</p>
+                        <p class="c-grey fs-13">Abdalla</p>
+                        <div class="end d-flex between-flex">
+                            <p class="c-grey fs-13">20/06/2020</p>
+                            <p class="c-grey fs-13">5.5mb</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End files -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

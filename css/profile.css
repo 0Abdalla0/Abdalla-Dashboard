@@ -1,0 +1,115 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+/* Start Profile */
+.profile{
+    text-align: center;
+    grid-column: 1 / -1;
+}
+.profile .card {
+    margin: auto;
+}
+.profile .card .bar{
+    width: 70%;
+    height: 8px;
+    background-color: #eee;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.profile .card .bar .progress{
+    height: 100%;
+    background-color: var(--blue-color) ;
+}
+
+.profile .row .btn{
+    border-radius: 50px;
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    margin: auto;
+}
+.profile .row .btn::before{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+}
+.toggle-checkbox:checked +.btn::before {
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue-color);
+}
+.toggle-checkbox{
+    display: none;
+    appearance: none;
+}
+.toggle-checkbox:checked +.btn{
+    background-color:var(--blue-color) ;
+}
+.profile .info{
+    border-left: 1px solid #eee;
+}
+.profile .row:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+.profile .row:hover{
+    background-color: #eee;
+}
+@media(max-width:767px),
+(max-width:991px){
+    .profile{
+        flex-direction: column;
+    }
+    .profile .info .row .txt{
+        flex-direction: column;
+    }
+}
+/* End Profile */
+/* Start Skills */
+.skills .row:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+
+/* End Skills */
+/* Start activites */
+.activites{
+    grid-column: 2/-1;
+}
+.activites .row:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+@media(max-width:767px){
+    .activites .row,
+    .activites .row .left{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* End activites */
+@media (max-width: 767px),
+(max-width: 2000px){
+.wrapper {
+    grid-template-columns: 1fr;
+}
+.profile,
+.skills,
+.activites {
+        grid-column: 1 / -1; 
+}
+}

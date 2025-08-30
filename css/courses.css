@@ -1,0 +1,26 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+.box > img{
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    border:2px solid white;
+    z-index: 10;
+    
+}
+.box .end{
+    padding: 0 20px 0;
+    border-top: 1px solid #eee;
+}
+.box .btn{
+    cursor: pointer;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}

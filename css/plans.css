@@ -1,0 +1,47 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+.plans-wrapper{
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+}
+@media(max-width:767px){
+    .plans-wrapper{
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    }
+}
+/* Start Box */
+.title-green{
+    outline: 3px solid var(--green-color);
+    border: 5px solid white;
+}
+.title-orange{
+    outline: 3px solid var(--orange-color);
+    border: 5px solid white;
+}
+.title-blue{
+    outline: 3px solid var(--blue-color);
+    border: 5px solid white;
+}
+.list .row{
+    border-bottom: 1px solid #eee;
+}
+.list .right>p::before{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    color: var(--green-color);
+    margin-right: 10px;
+}
+.list .wrong>p::before{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    color: var(--red-color);
+    margin-right: 10px;
+}
+/* End Box */

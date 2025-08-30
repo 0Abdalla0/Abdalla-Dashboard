@@ -1,0 +1,31 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+.box .team img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+    transition: all 0.3s;
+}
+.box .team img:not(:last-of-type){
+    margin-right: -12px;
+}
+.box .team img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.box .skills{
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.box .bar {
+    width: 50%;
+    height: 8px;
+}

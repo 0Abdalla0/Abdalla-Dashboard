@@ -1,0 +1,20 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+
+.box .top{
+    border-bottom: 1px solid #eee;
+}
+
+.box .end{
+    border-top: 1px solid #eee;
+}
+.box .mid .vip{
+    font-size: 52px;
+    opacity: 0.3;
+}

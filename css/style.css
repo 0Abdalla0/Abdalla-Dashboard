@@ -1,0 +1,381 @@
+:root {
+    --blue-color: rgb(0, 117, 255);
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+
+/* Start Welcome Widget */
+.welcome {
+    overflow: hidden;
+}
+.welcome .intro img {
+    width: 200px;
+    margin-bottom: -10px;
+}
+.welcome .avatar {
+    width: 64px;
+    height: 64px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 0 0 5px #ddd;
+    margin-left: 20px;
+    margin-top: -32px;
+}
+.welcome .body {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.welcome .body > div {
+    flex: 1;
+}
+.welcome .visit {
+    margin: 0 15px 15px auto;
+    transition: 0.3s;
+}
+.welcome .visit:hover {
+    background-color: var(--blue-alt-color);
+}
+@media (max-width: 767px) {
+.welcome .intro {
+    padding-bottom: 30px;
+}
+.welcome .avatar {
+    margin-left: 0;
+}
+.welcome .body > div:not(:last-child) {
+    margin-bottom: 20px;
+}
+}
+/* End Welcome Widget */
+/* Start Quick Draft Widget */
+.quick-draft textarea {
+    resize: none;
+    min-height: 180px;
+}
+.quick-draft .save {
+    margin-left: auto;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.quick-draft .save:hover {
+    background-color: var(--blue-alt-color);
+}
+/* End Quick Draft Widget */
+
+/* Start Targets */
+.targets .target-row .icon{
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+.targets .details{
+    flex: 1;
+}
+.targets .details .progress{
+    height: 4px;
+}
+.targets .details .progress > span{
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 100%;
+}
+.targets .details .progress > span span{
+    position: absolute;
+    bottom: 16px;
+    right: -16px;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+.targets .details .progress > span span::after{
+    content: "";
+    position: absolute;
+    border-color: transparent ;
+    border-width: 5px;
+    border-style: solid;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.targets .details .progress > .blue span::after{
+    border-top-color: var(--blue-color);
+}
+.targets .details .progress > .orange span::after{
+    border-top-color: var(--orange-color);
+}
+.targets .details .progress > .green span::after{
+    border-top-color: var(--green-color);
+}
+
+.blue .icon,
+.blue .progress{
+    background-color: rgba(0, 117, 255,0.2);
+} 
+.orange .icon,
+.orange .progress{
+    background-color: rgba(245 ,158, 11,0.2);
+} 
+.green .icon,
+.green .progress{
+    background-color: rgba(34 ,197 ,94,0.2);
+} 
+/* End Targets */
+/* Start tickets */
+.tickets .box{
+    border: 1px solid #ccc;
+    width: calc(50% - 10px);
+}
+@media(max-width:767px){
+    .tickets .box{
+        width: 100%;
+    }
+}
+/* End tickets */
+/* Start news */
+.news .news-row:not(:last-of-type){
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.news .news-row img{
+    width: 100px;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+.news .news-row .info{
+    flex-grow: 1;
+}
+.news .news-row .info h3{
+    margin: 0 0 6px;
+    font-size: 16px;
+}
+@media(max-width:767px)
+{
+    .news .news-row{
+        display: block;
+    }
+    .news .news-row .label{
+        margin: 10px auto;
+        width: fit-content;
+    }
+}
+/* End news */
+/* Start Tasks  */
+.tasks .task-row:not(:last-of-type){
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.tasks .task-row .info{
+    flex-grow: 1;
+}
+.tasks .done{
+    opacity: 0.3;
+}
+.tasks .done H3{
+    text-decoration: line-through;
+}
+.tasks .done p{
+    text-decoration: line-through;
+}
+.tasks .delete:hover{
+    color: red;
+}
+
+/* End Tasks  */
+/* Start uploads */
+.uploads .row img{
+    width: 40px;
+}
+.uploads .row .info{
+    flex-grow: 1;
+}
+.uploads .row:not(:last-of-type){
+    border-bottom: 1px solid #ccc;
+}
+
+/* end uploads */
+/* Start  process */
+.process::before{
+    content: "";
+    position: absolute;
+    border-left: 2px solid var(--blue-color);
+    height: 250px;
+    top: 90px;
+    left: 21px;
+}
+.process .row::before{
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    outline: 2px solid var(--blue-color);
+    z-index: 1;
+}
+.process .row:not(:last-of-type)::before{
+    background-color: var(--blue-color);
+}
+.process .started::before{
+    background-color: var(--blue-color);
+    animation:blink 0.8s infinite;
+}
+.process .unstarted::before{
+    background-color: white;
+}
+@keyframes blink{
+    0%, 100% {
+        background-color: rgb(0, 117, 255);   /* fully visible */
+    }
+    50% {
+        background-color: white
+    }
+}
+.process img{
+    position: absolute;
+    width: 160px;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+}
+/* End  process */
+/* Start reminders */
+.reminders .row .dot{
+    border: 10px solid;
+    border-radius: 50%;
+    height: 2px;
+}
+.reminders .task .dot{
+    border-color: var(--blue-color);
+}
+.reminders .project .dot{
+    border-color: var(--green-color);
+}
+.reminders .client .dot{
+    border-color: var(--orange-color);
+}
+.reminders .workshop .dot{
+    border-color: var(--red-color);
+}
+.reminders .row .txt::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+    height: 50%;
+    width: 2px;
+}
+.reminders .task .txt::after{
+    background-color: var(--blue-color);
+}
+.reminders .project .txt::after{
+    background-color: var(--green-color);
+}
+.reminders .client .txt::after{
+    background-color: var(--orange-color);
+}
+.reminders .workshop .txt::after{
+    background-color: var(--red-color);
+}
+.reminders .row .txt{
+    flex-grow: 1;
+}
+/* End reminders */
+/* Start post */
+.post .quote{
+    border: 1px solid var(--grey-color);
+    border-right: 0;
+    border-left: 0;
+}
+/* End post */
+/* Start social */
+.social i{
+    transition: all 0.3s;
+    max-width: 70px;
+}
+.social i:hover{
+    transform: rotate(5deg);
+}
+.social .twitter{
+    background-color: rgba(29, 161, 242,0.2);
+} 
+.social .twitter i{
+    background-color: rgb(29, 161, 242);
+}
+.social .twitter p{
+    color: rgb(29, 161, 242);
+}
+.social .twitter a{
+    background-color: rgb(29, 161, 242);
+}
+.social .facebook{
+    background-color: rgba(13, 105, 213,0.2);
+}
+.social .youtube{
+    background-color: rgba(244, 67, 54,0.2);
+}
+.social .linkdin{
+    background-color: rgba(0, 119, 181,0.2);
+} 
+.social .linkdin i{
+    background-color: rgb(0, 119, 181)
+}
+.social .linkdin p{
+    color: rgb(0, 119, 181);
+}
+.social .linkdin a{
+    background-color: rgb(0, 119, 181);
+}
+/* End social */
+/* Start Projects */
+.projects{
+    grid-column: 1 / -1;
+}
+.projects table {
+    border-spacing: 0;
+    min-width: 1000px;
+}
+.projects thead td {
+    background-color: #eee;
+    font-weight: bold;
+}
+.projects table td {
+    padding: 15px;
+}
+.projects tbody td {
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    transition: 0.3s;
+}
+.projects table tbody tr td:last-child {
+    border-right: 1px solid #eee;
+}
+.projects tbody tr:hover td {
+    background-color: #faf7f7;
+    cursor: pointer;
+}
+.projects table img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+}
+.projects table img:not(:first-child) {
+    margin-left: -20px;
+}
+.projects{
+    overflow: scroll;
+}
+/* End Projects */

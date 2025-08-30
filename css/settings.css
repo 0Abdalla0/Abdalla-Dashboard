@@ -1,0 +1,179 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+/* Start control */
+.control .web-control .btn,.security .row .btn{
+    border-radius: 50px;
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+}
+.control .web-control .btn::before,.security .row .btn::before{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.toggle-checkbox:checked +.btn::before {
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue-color);
+}
+.toggle-checkbox{
+    display: none;
+    appearance: none;
+}
+.toggle-checkbox:checked +.btn{
+background-color:var(--blue-color) ;
+}
+.control textarea{
+    resize: none;
+    border: 1px solid var(--grey-color);
+}
+/* End control */
+/* Start info */
+.info .email input:hover{
+    cursor:not-allowed;
+}
+.info .email p:hover{
+    cursor: pointer;
+}
+/* End info */
+/* Start Security */
+.security .row:not(:first-of-type){
+    border-top: 1px solid #eee;
+}
+/* End Security */
+/* Start Social */
+.social .icon::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 1px;
+    height: 210%;
+    background-color: #ccc;
+}
+.social .icon i{
+    opacity: 0.2;
+    transition: all 0.3s;
+}
+.social .row:focus-within i{
+    opacity: 1;
+}
+/* End Social */
+/* Start widget */
+.widget label::before,
+.widget label::after {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 4px;
+}
+.widget label::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--grey-color);
+}
+.widget label::after {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(360deg);
+    transition: 0.3s;
+}
+.widget input[type="checkbox"]:checked + label::after {
+    transform: scale(1);
+}
+.widget input[type="checkbox"]{
+    appearance: none;
+}
+/* End widget */
+/* Start Backup */
+.backup .date label::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    margin-top: -11px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--grey-color);
+    border-radius: 50%;
+}
+.backup .date label::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: var(--blue-color);
+    border-radius: 50%;
+    transition: 0.3s;
+    transform: scale(0);
+}
+.backup .date input[type="radio"]:checked + label::after {
+    transform: scale(1);
+}
+.backup .date input[type="radio"]:checked + label::before {
+    border: 2px solid var(--blue-color);
+}
+.backup .date input[type="radio"]{
+    transform: scale(3);
+    appearance: none;
+}
+.backup ul{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.backup .servers input[type="radio"]{
+    width: 100%;
+    height: 100%;
+    transform: scale(3);
+    opacity: 0;
+}
+.backup .servers .box {
+    min-width: 150px;
+    border: 2px solid #eee;
+    position: relative;
+    cursor: pointer;
+}
+.backup .servers .box:has(input[type="radio"]:checked){
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+@media(max-width:767px){
+    .backup .servers{
+        flex-direction: column;
+    }
+}
+/* End Backup */
