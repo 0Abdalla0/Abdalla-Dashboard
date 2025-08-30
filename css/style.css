@@ -212,7 +212,7 @@
 }
 @media(max-width:767px){
     .process::before{
-        height: 230px;
+        height: 250px;
         top: 60%;
         transform: translateY(-50%);
     }
